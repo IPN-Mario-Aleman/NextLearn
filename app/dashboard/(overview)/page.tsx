@@ -5,6 +5,12 @@ import { CardsSkeleton, LatestInvoicesSkeleton, RevenueChartSkeleton } from '@/a
 import { Suspense } from 'react';
 import CardWrapper from '../../ui/dashboard/cards';
 import LatestInvoices from '../../ui/dashboard/latest-invoices';
+
+import { Metadata } from 'next';
+ 
+export const metadata: Metadata = {
+  title: 'Account',
+};
  
 export default async function Page() {
   // const revenue = await fetchRevenue();
